@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arkstons.jpg</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styling -->
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+    }
+   
+    /* Navbar */
+    .navbar {
+        background-color: #c68a1f;
+    }
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+    .nav-link:hover {
+        color: #ffc107 !important;
+    }
+
+    /* Carousel */
+    #carouselExampleIndicators {
+        max-height: 500px;
+    }
+    .carousel-item img {
+        object-fit: cover;
+        height: 500px;
+    }
+
+    /* Section Titles */
+    h2 {
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    /* Collections */
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* Specials */
+    #specials .card img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* Latest News */
+    .news-card {
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Contact Us */
+    #contact {
+        background: #e9ecef;
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .contact-form {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+   
+    /* Footer */
+    footer {
+        background-color: #c68a1f;
+        color: white;
+        padding: 20px 0;
+    }
+    footer a {
+        color: #ffc107;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ARKSTONS.jpg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comingsoon">Coming Soon</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#printshop">Print Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Carousel -->
+<div id="shopCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="kolkatar-chobiwala-AqkPhfAgx10-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="raj-mathur-Ze2CHj2N8m0-unsplash.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="kolkatar-chobiwala-_0PnEuvkv8M-unsplash.jpg" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+            <img src="syarafina-idris-dCeWUxnIYaM-unsplash.jpg" class="d-block w-100" alt="Slide 4">
+        </div>
+        <div class="carousel-item">
+            <img src="boston-public-library-fcyB3TjwAOo-unsplash.jpg" class="d-block w-100" alt="Slide 5">
+        </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#shopCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#shopCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    /* Ensure the carousel image is not too large */
+    .carousel-item img {
+        object-fit: cover;  /* Ensures the image fills the space without distortion */
+        object-position: center; /* Keeps the center of the image in focus */
+        width: 100%; /* Full width of the container */
+        max-height: 60vh;  /* Limit the image height to 60% of the viewport height */
+    }
+
+    /* Optional: Additional styling to smooth the transition between carousel items */
+    .carousel-inner {
+        overflow: hidden;  /* Ensures no part of the image spills outside the carousel container */
+    }
+</style>
+
+   <!-- Collections -->
+<section id="collections" class="container py-5">
+    <h2 class="text-center mb-4">Portfolio</h2>
+    <div class="row">
+        <!-- Item 1 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="Howl's Moving Castle Redesign Poster.png" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Howl's Moving Castle Artcard</h5>
+                    <p class="card-text">₱300 | Redesign of Studio Ghibli's Howl's Moving Castle Artcard.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="Event Poster.png" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Summit Poster</h5>
+                    <p class="card-text">₱220 | An original poster inspired from Greek Intellectuals.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="Killing Eve Redesign Poster.png" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Killing Eve Template</h5>
+                    <p class="card-text">₱220 | The ever so famous Killing Eve Title Card redesign.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="Multiverse of Madness Redesign Poster.jpg" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                    <h5 class="card-title">MCU Fanmerch</h5>
+                    <p class="card-text">₱500 | 27 x 40 inches Alternate Marvel Poster (fanmade).</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="Quod Tu Es Movie Poster.png" class="card-img-top" alt="Product 5">
+                <div class="card-body">
+                    <h5 class="card-title">Quod Tu Es Editorial</h5>
+                    <p class="card-text">₱950 | A fashion editorial on the theater play Quod Tu Es.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="lats.jpg" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 class="card-title">Look at the Sky Poster</h5>
+                    <p class="card-text">₱1,500 | Official poster of Look at the Sky for Lycinema Film Festival 2024.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="COVER IG.png" class="card-img-top" alt="Product 7">
+                <div class="card-body">
+                    <h5 class="card-title">Petunia</h5>
+                    <p class="card-text">₱950 | A fashion magazine on beauty, and elegance.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Item 8 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="marosa.png" class="card-img-top" alt="Product 8">
+                <div class="card-body">
+                    <h5 class="card-title">Ma Rosa Artcard</h5>
+                    <p class="card-text">₱300 | A commemoration of Direk Brillante Mendoza's Ma Rosa.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Specials -->
+<section id="specials" class="container py-5">
+    <h2 class="text-center mb-4">Coming Soon</h2>
+    <div class="row">
+        <!-- Special 1 -->
+<div class="col-md-6 mb-4">
+    <div class="card">
+        <img src="INTRA 1.png" class="card-img-top" alt="Summer Straw Hat">
+        <div class="card-body">
+            <h5 class="card-title">Intramuros</h5>
+            <p class="card-text">₱200 | Film Stills from the heart of missing Intramuros' spots.</p>
+            <a href="#" class="btn btn-danger">Order Now</a>
+        </div>
+    </div>
+</div>
+
+        <!-- Special 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="LAGI 01.png" class="card-img-top" alt="Handwoven Premium Scarf">
+                <div class="card-body">
+                    <h5 class="card-title">Lagi't Lagi</h5>
+                    <p class="card-text">₱200 | Film Stills in consistency, choosing one thing over and over.</p>
+                    <a href="#" class="btn btn-danger">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News -->
+<section id="news" class="container py-5">
+    <h2 class="text-center mb-4">Print Shop</h2>
+    <div class="row">
+        <!-- News 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Arkstons Prints </h5>
+                    <p class="card-text">After months of planning, we’re bringing our exclusive designs and high-quality prints closer to you. Stay tuned for the grand opening date and more details.</p>
+                    <a href="#" class="btn btn-info">Read More</a>
+                </div>
+            </div>
+        </div>
+        <!-- News 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Grand Store Freebies</h5>
+                    <p class="card-text">To celebrate the opening of our physical store, we're giving away a FREE postcard art with every purchase to the first 50 orders!</p>
+                    <a href="#" class="btn btn-info">View Deals</a>
+                </div>
+            </div>
+        </div>
+        <!-- News 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Prints @ Komiket</h5>
+                    <p class="card-text">We're excited to announce that Arkston Prints will be attending Komiket this June! Join us at the event to discover our latest prints and exclusive artcards, showcasing fresh designs and vibrant new artwork.</p>
+                    <a href="#" class="btn btn-info">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Contact Us -->
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <h5 class="text-center">Find Us Here</h5>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443.678497525882!2d120.9842191!3d14.5995121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c99f2dd5d9b9%3A0xa9bde771e7f5863!2sManila%2C%20Philippines!5e0!3m2!1sen!2sph!4v1710000000000!5m2!1sen!2sph"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>About Us</h5>
+                <p>“In the lenses of sunshine.” Our brand sparkles in unexplainable thoughts and unsaid depth. We try to capture little parts of life with a vibrant personality, extending light to anything it touches. And as we welcome a new member of the den, ARKSTONS.jpg will start shining on collectibles—a day to day figures made from heartwarming stories..</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#collections" class="text-white text-decoration-none">Collections</a></li>
+                    <li><a href="#specials" class="text-white text-decoration-none">Specials</a></li>
+                    <li><a href="#news" class="text-white text-decoration-none">Latest News</a></li>
+                    <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <p class="mb-0">&copy; 2025 ARKSTONS.jpg Shop | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- FontAwesome for social media icons -->
+<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
